@@ -1,0 +1,13 @@
+{
+  "name": "localstack-bugs",
+  "packageManager": "yarn@4.1.0",
+  "devDependencies": {
+    "aws-cdk": "^2.130.0",
+    "aws-cdk-lib": "^2.130.0",
+    "aws-cdk-local": "^2.18.0",
+    "constructs": "^10.3.0",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
