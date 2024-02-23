@@ -2,6 +2,9 @@
   "name": "localstack-bugs",
   "packageManager": "yarn@4.1.0",
   "devDependencies": {
+    "@aws-sdk/client-s3": "^3.515.0",
+    "@aws-sdk/s3-presigned-post": "^3.515.0",
+    "@types/node": "^20.11.20",
     "aws-cdk": "^2.130.0",
     "aws-cdk-lib": "^2.130.0",
     "aws-cdk-local": "^2.18.0",
