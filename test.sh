@@ -13,13 +13,7 @@ PGPASSWORD="$PASSWORD" psql --host $HOST --username $USERNAME --port $PORT $DBNA
 \$do\$
 BEGIN
   CREATE ROLE iam_user WITH LOGIN;
-  IF EXISTS(
-      SELECT
-      FROM pg_catalog.pg_roles
-      WHERE rolname = 'rds_iam')
-  THEN
-      GRANT rds_iam TO iam_user;
-  END IF;
+  GRANT rds_iam TO iam_user
 END
 \$do\$;"
 
