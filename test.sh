@@ -9,11 +9,17 @@ HOST=$(echo $SECRET_VALUE | jq .host -r)
 PORT=$(echo $SECRET_VALUE | jq .port -r)
 DBNAME=$(echo $SECRET_VALUE | jq .dbname -r)
 
-PGPASSWORD="$PASSWORD" psql --host $HOST --username $USERNAME --port $PORT $DBNAME -c "CREATE ROLE iam_user WITH LOGIN;"
 PGPASSWORD="$PASSWORD" psql --host $HOST --username $USERNAME --port $PORT $DBNAME -c "DO
 \$do\$
 BEGIN
-  GRANT rds_iam TO iam_user;
+  CREATE ROLE iam_user WITH LOGIN;
+  IF EXISTS(
+      SELECT
+      FROM pg_catalog.pg_roles
+      WHERE rolname = 'rds_iam')
+  THEN
+      GRANT rds_iam TO iam_user;
+  END IF;
 END
 \$do\$;"
 
