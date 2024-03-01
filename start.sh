@@ -8,6 +8,5 @@ while [ ! "$(curl -s http://localhost:4566/_localstack/health | jq -c '.services
 done
 
 yarn cdklocal bootstrap
-yarn cdklocal deploy --all --require-approval never
 
 ./test.sh
