@@ -1,4 +1,4 @@
 #!/bin/bash
 
-DEPLOY_POST=true yarn cdklocal deploy --all --require-approval never
-DEPLOY_POST=true yarn cdklocal diff
+CHANGE=true yarn cdklocal deploy --all --require-approval never
+CHANGE=true yarn cdklocal diff

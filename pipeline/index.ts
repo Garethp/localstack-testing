@@ -1,8 +1,8 @@
 import { App } from "aws-cdk-lib";
-import { GatewayStack } from "./GatewayStack";
+import { SSMStack } from "./SSMStack";
 
 const app = new App();
-new GatewayStack(app, "gateway-stack", {
+new SSMStack(app, "ssm-stack", {
   env: {
     account: "000000000000",
     region: "eu-west-2",
