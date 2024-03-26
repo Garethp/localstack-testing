@@ -235,9 +235,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-cdk-lib@npm:^2.130.0":
-  version: 2.130.0
-  resolution: "aws-cdk-lib@npm:2.130.0"
+"aws-cdk-lib@npm:2.133.0":
+  version: 2.133.0
+  resolution: "aws-cdk-lib@npm:2.133.0"
   dependencies:
     "@aws-cdk/asset-awscli-v1": "npm:^2.2.202"
     "@aws-cdk/asset-kubectl-v20": "npm:^2.1.2"
@@ -255,7 +255,7 @@ __metadata:
     yaml: "npm:1.10.2"
   peerDependencies:
     constructs: ^10.0.0
-  checksum: 10c0/b8cc29d9f08324eb6ad20c1a26a84bbb42565b3b0c363a8ef1bd3d6bf42503f66a6cf566eac91c37496123d5c10e80d11119aeb8a668cc38957e8cf5628b1a42
+  checksum: 10c0/37015787c701b2665345d1fa7632538543ff488715788b7b2c999519a6d698feab1d92ae2f35093c6d4f6e9658e4a8db572a9f8e8fa2e5a12e8d75b9544638ea
   languageName: node
   linkType: hard
 
@@ -270,9 +270,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-cdk@npm:^2.130.0":
-  version: 2.130.0
-  resolution: "aws-cdk@npm:2.130.0"
+"aws-cdk@npm:2.133.0":
+  version: 2.133.0
+  resolution: "aws-cdk@npm:2.133.0"
   dependencies:
     fsevents: "npm:2.3.2"
   dependenciesMeta:
@@ -280,7 +280,7 @@ __metadata:
       optional: true
   bin:
     cdk: bin/cdk
-  checksum: 10c0/d559bcc9a0c83b4cdf45ca3de20c6d5ef00dc7d5f3d92e73d0f2095683954bf0f4953ebe3660d52d2d14c42c76753b2e717158fbca8456ebda23d986847bfef0
+  checksum: 10c0/fb33c78e5f164ed54922f53d30abe58a993f5eb9f6ddc4802264a3de1476a539090f444efcb69b2a60c0bf9e45f0ebb89f35155bfa98588ac87ec85677938838
   languageName: node
   linkType: hard
 
@@ -709,8 +709,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "localstack-bugs@workspace:."
   dependencies:
-    aws-cdk: "npm:^2.130.0"
-    aws-cdk-lib: "npm:^2.130.0"
+    aws-cdk: "npm:2.133.0"
+    aws-cdk-lib: "npm:2.133.0"
     aws-cdk-local: "npm:^2.18.0"
     constructs: "npm:^10.3.0"
     prettier: "npm:^3.2.5"

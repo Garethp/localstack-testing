@@ -2,18 +2,22 @@ version: "3.5"
 services:
   localstack:
     container_name: "localstack-bugs"
-    image: localstack/localstack-pro:3.1
+    image: localstack/localstack-pro:3.2
     network_mode: bridge
     ports:
       - "4566:4566"
       - "4510-4559:4510-4559"
       - "127.0.0.1:53:53"
       - "127.0.0.1:53:53/udp"
+      - "80:80"
       - "443:443"
       - "4571:4571"
       - "46810:46810"
     environment:
       - DEBUG=1
+      - PERSISTENCE=1
+      - SNAPSHOT_SAVE_STRATEGY=ON_SHUTDOWN
+      - SNAPSHOT_LOAD_STRATEGY=ON_STARTUP
       - DOCKER_HOST=unix:///var/run/docker.sock
       - TEST_AWS_ACCOUNT_ID=000000000000
       - AWS_REGION=eu-west-2
@@ -29,3 +33,4 @@ services:
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
       - "/etc/ssl/certs/:/etc/ssl/certs/"
+      - "${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack"
