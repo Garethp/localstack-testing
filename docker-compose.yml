@@ -2,7 +2,7 @@ version: "3.5"
 services:
   localstack:
     container_name: "localstack-bugs"
-    image: localstack/localstack-pro:3.1
+    image: localstack/localstack-pro:latest
     network_mode: bridge
     ports:
       - "4566:4566"
@@ -14,6 +14,7 @@ services:
       - "46810:46810"
     environment:
       - DEBUG=1
+      - ENFORCE_IAM=1
       - DOCKER_HOST=unix:///var/run/docker.sock
       - TEST_AWS_ACCOUNT_ID=000000000000
       - AWS_REGION=eu-west-2
