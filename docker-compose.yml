@@ -2,13 +2,14 @@ version: "3.5"
 services:
   localstack:
     container_name: "localstack-bugs"
-    image: localstack/localstack-pro:3.1
+    image: localstack/localstack-pro:latest
     network_mode: bridge
     ports:
       - "4566:4566"
       - "4510-4559:4510-4559"
       - "127.0.0.1:53:53"
       - "127.0.0.1:53:53/udp"
+      - "80:80"
       - "443:443"
       - "4571:4571"
       - "46810:46810"
