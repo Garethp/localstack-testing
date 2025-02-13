@@ -5,24 +5,34 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@aws-cdk/asset-awscli-v1@npm:^2.2.202":
-  version: 2.2.202
-  resolution: "@aws-cdk/asset-awscli-v1@npm:2.2.202"
-  checksum: 10c0/3702ae0c6d57094a9f8f7fc86af2cf98d128c601ee2b8e14f72bf6b869e5b54df6448014f2d88c2fdff1258a182e28d735c9b0a807180e1eaa62367f93051bd4
+"@aws-cdk/asset-awscli-v1@npm:^2.2.208":
+  version: 2.2.223
+  resolution: "@aws-cdk/asset-awscli-v1@npm:2.2.223"
+  checksum: 10c0/7e6e4d28b08ef1c5781f474dfa23189df2f78dbc0dff88400e35c2aa271a4fe0f666bf1eac1d179ac02a5db951d27d94fa2bd6b7b95b62eff462e1389ac95a6f
   languageName: node
   linkType: hard
 
-"@aws-cdk/asset-kubectl-v20@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "@aws-cdk/asset-kubectl-v20@npm:2.1.2"
-  checksum: 10c0/491883ada4b62f89e48e3d45d776b72d30cbb2d87e0802424164343c81723b23dd77044ab3cb02a7ecad9960622dc264f9f716d2ec830404482117ee63f8bb2d
+"@aws-cdk/asset-kubectl-v20@npm:^2.1.3":
+  version: 2.1.4
+  resolution: "@aws-cdk/asset-kubectl-v20@npm:2.1.4"
+  checksum: 10c0/ab9353104f8a49807c906ce0193a838c3c82f25e6fecfa5b5341d722730574b4b5824fbf62b17fe69f07df34796a3e77513a55327e05f34556b518b0424041d7
   languageName: node
   linkType: hard
 
-"@aws-cdk/asset-node-proxy-agent-v6@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@aws-cdk/asset-node-proxy-agent-v6@npm:2.0.1"
-  checksum: 10c0/1f4b11a66483b3c0f1bf3f7d325d94e5f0175ea49347f75b10b13ddfc35578d5bf4b45c1cb4b1e03c08ba0d2c3c52f8e914150bd7c0cfdb92ae71de3f07cedf3
+"@aws-cdk/asset-node-proxy-agent-v6@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@aws-cdk/asset-node-proxy-agent-v6@npm:2.1.0"
+  checksum: 10c0/1ac7bccf82afee69c05241a5ad66345fbd468678ce633bb43c5921c7241a3186231b3b65f9ac6b9924933349c826a9470c79a3ddf14a03fbfce43f14c4d957f2
+  languageName: node
+  linkType: hard
+
+"@aws-cdk/cloud-assembly-schema@npm:^39.2.0":
+  version: 39.2.20
+  resolution: "@aws-cdk/cloud-assembly-schema@npm:39.2.20"
+  dependencies:
+    jsonschema: "npm:~1.4.1"
+    semver: "npm:^7.7.1"
+  checksum: 10c0/94a96dc318627f2e3dfdd984134ad106f1e592d2eae41cd690069726c2f7aa4155e9f5196e71281eb199dc61b5f23cfbdbef59b8fda84d44da7a1aefb4a109af
   languageName: node
   linkType: hard
 
@@ -235,44 +245,45 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-cdk-lib@npm:^2.130.0":
-  version: 2.130.0
-  resolution: "aws-cdk-lib@npm:2.130.0"
+"aws-cdk-lib@npm:2.178.2":
+  version: 2.178.2
+  resolution: "aws-cdk-lib@npm:2.178.2"
   dependencies:
-    "@aws-cdk/asset-awscli-v1": "npm:^2.2.202"
-    "@aws-cdk/asset-kubectl-v20": "npm:^2.1.2"
-    "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.0.1"
+    "@aws-cdk/asset-awscli-v1": "npm:^2.2.208"
+    "@aws-cdk/asset-kubectl-v20": "npm:^2.1.3"
+    "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.1.0"
+    "@aws-cdk/cloud-assembly-schema": "npm:^39.2.0"
     "@balena/dockerignore": "npm:^1.0.2"
     case: "npm:1.6.3"
     fs-extra: "npm:^11.2.0"
-    ignore: "npm:^5.3.1"
+    ignore: "npm:^5.3.2"
     jsonschema: "npm:^1.4.1"
     mime-types: "npm:^2.1.35"
     minimatch: "npm:^3.1.2"
     punycode: "npm:^2.3.1"
-    semver: "npm:^7.6.0"
-    table: "npm:^6.8.1"
+    semver: "npm:^7.6.3"
+    table: "npm:^6.8.2"
     yaml: "npm:1.10.2"
   peerDependencies:
     constructs: ^10.0.0
-  checksum: 10c0/b8cc29d9f08324eb6ad20c1a26a84bbb42565b3b0c363a8ef1bd3d6bf42503f66a6cf566eac91c37496123d5c10e80d11119aeb8a668cc38957e8cf5628b1a42
+  checksum: 10c0/80144b2f3f161dfdb00e570b7f65b027ca518a0b14e1f925662a7a5d5bc950609043c088e6e4d7ef49ae2675d8b3f0bf4c507709b5a869c08306f38791f72d3e
   languageName: node
   linkType: hard
 
-"aws-cdk-local@npm:^2.18.0":
-  version: 2.18.0
-  resolution: "aws-cdk-local@npm:2.18.0"
+"aws-cdk-local@npm:2.19.2":
+  version: 2.19.2
+  resolution: "aws-cdk-local@npm:2.19.2"
   dependencies:
     diff: "npm:^5.0.0"
   bin:
     cdklocal: bin/cdklocal
-  checksum: 10c0/38011b93c9a3d067675096d4d8fcb70fa797f5e5aaa6504482a91679b25fff3484481d7a368e5a2a3739c28fbbe8ce755b16b019ebb61ddf1f0b1b11fd07d697
+  checksum: 10c0/cca4daba97a2438e9742a2d939faa3480ae900db8d589a92fc3d65990f611b95ace538ee66f1812dd043ff43c499fee6925181ea322e28834d5717b8f634770a
   languageName: node
   linkType: hard
 
-"aws-cdk@npm:^2.130.0":
-  version: 2.130.0
-  resolution: "aws-cdk@npm:2.130.0"
+"aws-cdk@npm:2.178.2":
+  version: 2.178.2
+  resolution: "aws-cdk@npm:2.178.2"
   dependencies:
     fsevents: "npm:2.3.2"
   dependenciesMeta:
@@ -280,7 +291,7 @@ __metadata:
       optional: true
   bin:
     cdk: bin/cdk
-  checksum: 10c0/d559bcc9a0c83b4cdf45ca3de20c6d5ef00dc7d5f3d92e73d0f2095683954bf0f4953ebe3660d52d2d14c42c76753b2e717158fbca8456ebda23d986847bfef0
+  checksum: 10c0/f563c2ccc3144f1ca8e3dfdeb8d3b556030e231869b26406b1c365dcafb19e1b7781903e2183731f068b1864afc33c89a2eea2641b1f9b386601d0c6adf5f8ed
   languageName: node
   linkType: hard
 
@@ -374,10 +385,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"constructs@npm:^10.3.0":
-  version: 10.3.0
-  resolution: "constructs@npm:10.3.0"
-  checksum: 10c0/be93ff934f28f2226a674dc18cd608dc7543e2cd6e17e4fbbb55faf80a5ab30b5346bdb18f266ea9b9192438debaafa0b65cad09d67a33a9f84fd8919200ee79
+"constructs@npm:10.4.2":
+  version: 10.4.2
+  resolution: "constructs@npm:10.4.2"
+  checksum: 10c0/dcd5edd631c7313964f89fffb7365e1eebaede16cbc9ae69eab5337710353913684b860ccc4b2a3dfaf147656f48f0ae7853ca94cb51833e152b46047ac7a4ff
   languageName: node
   linkType: hard
 
@@ -599,10 +610,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ignore@npm:^5.3.1":
-  version: 5.3.1
-  resolution: "ignore@npm:5.3.1"
-  checksum: 10c0/703f7f45ffb2a27fb2c5a8db0c32e7dee66b33a225d28e8db4e1be6474795f606686a6e3bcc50e1aa12f2042db4c9d4a7d60af3250511de74620fbed052ea4cd
+"ignore@npm:^5.3.2":
+  version: 5.3.2
+  resolution: "ignore@npm:5.3.2"
+  checksum: 10c0/f9f652c957983634ded1e7f02da3b559a0d4cc210fca3792cb67f1b153623c9c42efdc1c4121af171e295444459fc4a9201101fb041b1104a3c000bccb188337
   languageName: node
   linkType: hard
 
@@ -698,7 +709,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonschema@npm:^1.4.1":
+"jsonschema@npm:^1.4.1, jsonschema@npm:~1.4.1":
   version: 1.4.1
   resolution: "jsonschema@npm:1.4.1"
   checksum: 10c0/c3422d3fc7d33ff7234a806ffa909bb6fb5d1cd664bea229c64a1785dc04cbccd5fc76cf547c6ab6dd7881dbcaf3540a6a9f925a5956c61a9cd3e23a3c1796ef
@@ -709,13 +720,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "localstack-bugs@workspace:."
   dependencies:
-    aws-cdk: "npm:^2.130.0"
-    aws-cdk-lib: "npm:^2.130.0"
-    aws-cdk-local: "npm:^2.18.0"
-    constructs: "npm:^10.3.0"
-    prettier: "npm:^3.2.5"
-    ts-node: "npm:^10.9.2"
-    typescript: "npm:^5.3.3"
+    aws-cdk: "npm:2.178.2"
+    aws-cdk-lib: "npm:2.178.2"
+    aws-cdk-local: "npm:2.19.2"
+    constructs: "npm:10.4.2"
+    prettier: "npm:3.5.0"
+    ts-node: "npm:10.9.2"
+    typescript: "npm:5.3.3"
   languageName: unknown
   linkType: soft
 
@@ -966,12 +977,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.2.5":
-  version: 3.2.5
-  resolution: "prettier@npm:3.2.5"
+"prettier@npm:3.5.0":
+  version: 3.5.0
+  resolution: "prettier@npm:3.5.0"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/ea327f37a7d46f2324a34ad35292af2ad4c4c3c3355da07313339d7e554320f66f65f91e856add8530157a733c6c4a897dc41b577056be5c24c40f739f5ee8c6
+  checksum: 10c0/6c355d74c377f5622953229d92477e8b9779162e848db90fd7e06c431deb73585d31fafc4516cf5868917825b97b9ec7c87c8d8b8e03ccd9fc9c0b7699d1a650
   languageName: node
   linkType: hard
 
@@ -1020,7 +1031,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5, semver@npm:^7.6.0":
+"semver@npm:^7.3.5":
   version: 7.6.0
   resolution: "semver@npm:7.6.0"
   dependencies:
@@ -1028,6 +1039,15 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 10c0/fbfe717094ace0aa8d6332d7ef5ce727259815bd8d8815700853f4faf23aacbd7192522f0dc5af6df52ef4fa85a355ebd2f5d39f554bd028200d6cf481ab9b53
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.6.3, semver@npm:^7.7.1":
+  version: 7.7.1
+  resolution: "semver@npm:7.7.1"
+  bin:
+    semver: bin/semver.js
+  checksum: 10c0/fd603a6fb9c399c6054015433051bdbe7b99a940a8fb44b85c2b524c4004b023d7928d47cb22154f8d054ea7ee8597f586605e05b52047f048278e4ac56ae958
   languageName: node
   linkType: hard
 
@@ -1149,16 +1169,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"table@npm:^6.8.1":
-  version: 6.8.1
-  resolution: "table@npm:6.8.1"
+"table@npm:^6.8.2":
+  version: 6.9.0
+  resolution: "table@npm:6.9.0"
   dependencies:
     ajv: "npm:^8.0.1"
     lodash.truncate: "npm:^4.4.2"
     slice-ansi: "npm:^4.0.0"
     string-width: "npm:^4.2.3"
     strip-ansi: "npm:^6.0.1"
-  checksum: 10c0/591ed84b2438b01c9bc02248e2238e21e8bfb73654bc5acca0d469053eb39be3db2f57d600dcf08ac983b6f50f80842c44612c03877567c2afee3aec4a033e5f
+  checksum: 10c0/35646185712bb65985fbae5975dda46696325844b78735f95faefae83e86df0a265277819a3e67d189de6e858c509b54e66ca3958ffd51bde56ef1118d455bf4
   languageName: node
   linkType: hard
 
@@ -1176,7 +1196,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^10.9.2":
+"ts-node@npm:10.9.2":
   version: 10.9.2
   resolution: "ts-node@npm:10.9.2"
   dependencies:
@@ -1214,7 +1234,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.3.3":
+"typescript@npm:5.3.3":
   version: 5.3.3
   resolution: "typescript@npm:5.3.3"
   bin:
@@ -1224,7 +1244,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.3.3#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>":
   version: 5.3.3
   resolution: "typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"
   bin:
