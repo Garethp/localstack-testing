@@ -2,8 +2,8 @@
   "name": "localstack-bugs",
   "packageManager": "yarn@4.1.0",
   "devDependencies": {
-    "aws-cdk": "2.178.2",
-    "aws-cdk-lib": "2.178.2",
+    "aws-cdk": "2.172.0",
+    "aws-cdk-lib": "2.172.0",
     "aws-cdk-local": "2.19.2",
     "constructs": "10.4.2",
     "prettier": "3.5.0",
