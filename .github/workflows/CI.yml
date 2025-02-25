@@ -12,5 +12,7 @@ jobs:
         with:
           node-version: '20'
       - run: |
+          corepack enable
+          corepack prepare yarn
           yarn install --immutable
           ./start.sh
