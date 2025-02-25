@@ -15,5 +15,7 @@ jobs:
           sudo apt-get install docker-compose -y
           corepack enable
           corepack prepare yarn
+          rm -rf node_modules/
+          rm -rf .yarn/install-state.gz
           yarn install --immutable
           ./start.sh
