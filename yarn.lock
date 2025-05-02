@@ -705,9 +705,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"localstack-bugs@workspace:.":
+"localstack-testing@workspace:.":
   version: 0.0.0-use.local
-  resolution: "localstack-bugs@workspace:."
+  resolution: "localstack-testing@workspace:."
   dependencies:
     aws-cdk: "npm:^2.130.0"
     aws-cdk-lib: "npm:^2.130.0"

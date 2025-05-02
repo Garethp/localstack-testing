@@ -1,8 +1,8 @@
 version: "3.5"
 services:
   localstack:
-    container_name: "localstack-bugs"
-    image: localstack/localstack-pro:latest
+    container_name: "localstack-testing"
+    image: localstack/localstack-pro:4.3
     network_mode: bridge
     ports:
       - "4566:4566"
