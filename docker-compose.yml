@@ -2,7 +2,7 @@ version: "3.5"
 services:
   localstack:
     container_name: "localstack-testing"
-    image: localstack/localstack-pro:4.1.1
+    image: localstack/localstack-pro:4.4.0
     network_mode: bridge
     ports:
       - "4566:4566"
@@ -11,6 +11,7 @@ services:
       - "127.0.0.1:53:53/udp"
       - "4571:4571"
     environment:
+      - DEBUG=1
       - DOCKER_HOST=unix:///var/run/docker.sock
       - TEST_AWS_ACCOUNT_ID=000000000000
       - LOCALSTACK_AUTH_TOKEN=${LOCALSTACK_AUTH_TOKEN}
