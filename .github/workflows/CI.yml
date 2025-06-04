@@ -1,0 +1,21 @@
+name: CI
+
+
+on: [push]
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: |
+          sudo apt-get install docker-compose -y
+          corepack enable
+          corepack prepare yarn
+          rm -rf node_modules/
+          rm -rf .yarn/install-state.gz
+          yarn install --immutable
+          ./start.sh
