@@ -1,6 +1,6 @@
 #!/bin/bash
 
-awslocal ssm put-parameter --name my-ssm --value test2 --overwrite
+AWS_ACCESS_KEY_ID=test AWS_SECRET_ACCESS_KEY=test AWS_DEFAULT_REGION=eu-west-2 aws --endpoint-url=http://localhost:4566 ssm put-parameter --name my-ssm --value test2 --overwrite
 
 sleep 5
 

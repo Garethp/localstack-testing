@@ -5,17 +5,10 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@aws-cdk/asset-awscli-v1@npm:^2.2.208":
-  version: 2.2.234
-  resolution: "@aws-cdk/asset-awscli-v1@npm:2.2.234"
-  checksum: 10c0/d4101cd20affd15ac2992a97a4d5924a7c321d1d983749edd7315a3e1c927db7ca065941e70affe58fd9514149cd1382c6558f0956c471c6d09a56f68baba88e
-  languageName: node
-  linkType: hard
-
-"@aws-cdk/asset-kubectl-v20@npm:^2.1.3":
-  version: 2.1.4
-  resolution: "@aws-cdk/asset-kubectl-v20@npm:2.1.4"
-  checksum: 10c0/ab9353104f8a49807c906ce0193a838c3c82f25e6fecfa5b5341d722730574b4b5824fbf62b17fe69f07df34796a3e77513a55327e05f34556b518b0424041d7
+"@aws-cdk/asset-awscli-v1@npm:2.2.237":
+  version: 2.2.237
+  resolution: "@aws-cdk/asset-awscli-v1@npm:2.2.237"
+  checksum: 10c0/38ebf1396f7c2a7b56b6459590b97d3c5920a4ac016852c1c370f600e16bd48f19f44f3b0d183b11ce4a6eb326940e284cd07a17f7f8bf50cf898f1c9c290b1f
   languageName: node
   linkType: hard
 
@@ -26,13 +19,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-cdk/cloud-assembly-schema@npm:^39.2.0":
-  version: 39.2.20
-  resolution: "@aws-cdk/cloud-assembly-schema@npm:39.2.20"
+"@aws-cdk/cloud-assembly-schema@npm:^44.1.0":
+  version: 44.1.0
+  resolution: "@aws-cdk/cloud-assembly-schema@npm:44.1.0"
   dependencies:
     jsonschema: "npm:~1.4.1"
-    semver: "npm:^7.7.1"
-  checksum: 10c0/94a96dc318627f2e3dfdd984134ad106f1e592d2eae41cd690069726c2f7aa4155e9f5196e71281eb199dc61b5f23cfbdbef59b8fda84d44da7a1aefb4a109af
+    semver: "npm:^7.7.2"
+  checksum: 10c0/c911272e6e221e77e95570b711d2e194d4935e7431f2808df8bebadd326861a655ff50ca4d37ae490a4c0c6c05f2f4c706ecf1efb57be62c42e1f360a68a6495
   languageName: node
   linkType: hard
 
@@ -244,45 +237,44 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-cdk-lib@npm:2.178.2":
-  version: 2.178.2
-  resolution: "aws-cdk-lib@npm:2.178.2"
+"aws-cdk-lib@npm:2.200.1":
+  version: 2.200.1
+  resolution: "aws-cdk-lib@npm:2.200.1"
   dependencies:
-    "@aws-cdk/asset-awscli-v1": "npm:^2.2.208"
-    "@aws-cdk/asset-kubectl-v20": "npm:^2.1.3"
+    "@aws-cdk/asset-awscli-v1": "npm:2.2.237"
     "@aws-cdk/asset-node-proxy-agent-v6": "npm:^2.1.0"
-    "@aws-cdk/cloud-assembly-schema": "npm:^39.2.0"
+    "@aws-cdk/cloud-assembly-schema": "npm:^44.1.0"
     "@balena/dockerignore": "npm:^1.0.2"
     case: "npm:1.6.3"
-    fs-extra: "npm:^11.2.0"
+    fs-extra: "npm:^11.3.0"
     ignore: "npm:^5.3.2"
-    jsonschema: "npm:^1.4.1"
+    jsonschema: "npm:^1.5.0"
     mime-types: "npm:^2.1.35"
     minimatch: "npm:^3.1.2"
     punycode: "npm:^2.3.1"
-    semver: "npm:^7.6.3"
-    table: "npm:^6.8.2"
+    semver: "npm:^7.7.2"
+    table: "npm:^6.9.0"
     yaml: "npm:1.10.2"
   peerDependencies:
     constructs: ^10.0.0
-  checksum: 10c0/80144b2f3f161dfdb00e570b7f65b027ca518a0b14e1f925662a7a5d5bc950609043c088e6e4d7ef49ae2675d8b3f0bf4c507709b5a869c08306f38791f72d3e
+  checksum: 10c0/e9ed6744bc131d712eb991a5e1f8dae081b8974d7bb93408ba8d476323e0086533a59d682bf70187c00fd1d36305006a5d0b24637c7258d0e3f03e92b840daaf
   languageName: node
   linkType: hard
 
-"aws-cdk-local@npm:2.19.2":
-  version: 2.19.2
-  resolution: "aws-cdk-local@npm:2.19.2"
+"aws-cdk-local@npm:3.0.1":
+  version: 3.0.1
+  resolution: "aws-cdk-local@npm:3.0.1"
   dependencies:
     diff: "npm:^5.0.0"
   bin:
     cdklocal: bin/cdklocal
-  checksum: 10c0/cca4daba97a2438e9742a2d939faa3480ae900db8d589a92fc3d65990f611b95ace538ee66f1812dd043ff43c499fee6925181ea322e28834d5717b8f634770a
+  checksum: 10c0/42a791ce12500571f3ae865fad4b54d24afcbd04a39dabfb9caec50beb1668967a8bddc70dcd86eb6acd6b413c9f0e31474d37fee54efbf2111f2718feae38f5
   languageName: node
   linkType: hard
 
-"aws-cdk@npm:2.178.2":
-  version: 2.178.2
-  resolution: "aws-cdk@npm:2.178.2"
+"aws-cdk@npm:2.1017.1":
+  version: 2.1017.1
+  resolution: "aws-cdk@npm:2.1017.1"
   dependencies:
     fsevents: "npm:2.3.2"
   dependenciesMeta:
@@ -290,7 +282,7 @@ __metadata:
       optional: true
   bin:
     cdk: bin/cdk
-  checksum: 10c0/f563c2ccc3144f1ca8e3dfdeb8d3b556030e231869b26406b1c365dcafb19e1b7781903e2183731f068b1864afc33c89a2eea2641b1f9b386601d0c6adf5f8ed
+  checksum: 10c0/fa3d5d5498c2535221356699006bcaaf1c65f6b05cffb7fef931eea1d4c0be08af771264b305351408e4ce96f3052fe7749148f6b6104f89e5dcfd11a0306cdb
   languageName: node
   linkType: hard
 
@@ -515,7 +507,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^11.2.0":
+"fs-extra@npm:^11.3.0":
   version: 11.3.0
   resolution: "fs-extra@npm:11.3.0"
   dependencies:
@@ -698,7 +690,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonschema@npm:^1.4.1":
+"jsonschema@npm:^1.5.0":
   version: 1.5.0
   resolution: "jsonschema@npm:1.5.0"
   checksum: 10c0/c24ddb8d741f02efc0da3ad9b597a275f6b595062903d3edbfaa535c3f9c4c98613df68da5cb6635ed9aeab30d658986fea61d7662fc5b2b92840d5a1e21235e
@@ -716,9 +708,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "localstack-testing@workspace:."
   dependencies:
-    aws-cdk: "npm:2.178.2"
-    aws-cdk-lib: "npm:2.178.2"
-    aws-cdk-local: "npm:2.19.2"
+    aws-cdk: "npm:2.1017.1"
+    aws-cdk-lib: "npm:2.200.1"
+    aws-cdk-local: "npm:3.0.1"
     constructs: "npm:10.4.2"
     prettier: "npm:3.5.0"
     ts-node: "npm:10.9.2"
@@ -1022,12 +1014,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5, semver@npm:^7.6.3, semver@npm:^7.7.1":
+"semver@npm:^7.3.5":
   version: 7.7.1
   resolution: "semver@npm:7.7.1"
   bin:
     semver: bin/semver.js
   checksum: 10c0/fd603a6fb9c399c6054015433051bdbe7b99a940a8fb44b85c2b524c4004b023d7928d47cb22154f8d054ea7ee8597f586605e05b52047f048278e4ac56ae958
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.7.2":
+  version: 7.7.2
+  resolution: "semver@npm:7.7.2"
+  bin:
+    semver: bin/semver.js
+  checksum: 10c0/aca305edfbf2383c22571cb7714f48cadc7ac95371b4b52362fb8eeffdfbc0de0669368b82b2b15978f8848f01d7114da65697e56cd8c37b0dab8c58e543f9ea
   languageName: node
   linkType: hard
 
@@ -1149,7 +1150,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"table@npm:^6.8.2":
+"table@npm:^6.9.0":
   version: 6.9.0
   resolution: "table@npm:6.9.0"
   dependencies:
