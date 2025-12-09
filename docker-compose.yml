@@ -1,8 +1,7 @@
-version: "3.5"
 services:
   localstack:
     container_name: "localstack-testing"
-    image: localstack/localstack-pro:4.1.1
+    image: localstack/localstack-pro:stable
     network_mode: bridge
     ports:
       - "4566:4566"

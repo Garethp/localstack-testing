@@ -1,7 +1,7 @@
 #!/bin/bash
 
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 
 while [ ! "$(curl -s http://localhost:4566/_localstack/health | jq -c '.services | .[] | test("running|available") | not' | grep "false")" ]; do
   sleep 1
