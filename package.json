@@ -2,6 +2,7 @@
   "name": "localstack-testing",
   "packageManager": "yarn@4.12.0",
   "devDependencies": {
+    "@types/node": "24.10.3",
     "aws-cdk": "2.1033.0",
     "aws-cdk-lib": "2.232.1",
     "aws-cdk-local": "3.0.1",
