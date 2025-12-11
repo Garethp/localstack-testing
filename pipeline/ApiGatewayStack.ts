@@ -13,18 +13,19 @@ export class ApiGatewayStack extends Stack {
 
     if (!!process.env.SECOND_DEPLOY) return;
 
-    const hostedZone = new PublicHostedZone(this, "HostedZone", {
-      zoneName: "localhost.localstack.cloud",
-    });
+    // const hostedZone = new PublicHostedZone(this, "HostedZone", {
+    //   zoneName: "localhost.localstack.cloud",
+    // });
 
     const certificate = new Certificate(this, "Certificate", {
-      domainName: "localhost.localstack.cloud",
-      validation: CertificateValidation.fromDns(hostedZone),
+      domainName: "example.localhost.localstack.cloud",
+      // validation: CertificateValidation.fromDns(hostedZone),
     });
 
     const api = new RestApi(this, "RestApi", {
+      restApiName: "test-api",
       domainName: {
-        domainName: "localhost.localstack.cloud",
+        domainName: "example.localhost.localstack.cloud",
         certificate,
       },
     });
